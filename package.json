@@ -1,0 +1,15 @@
+{
+  "name": "codex-balance-widget",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "tauri": "tauri",
+    "portable": "tauri build --no-bundle && node scripts/package.mjs"
+  },
+  "dependencies": { "@tauri-apps/api": "^2.10.0" },
+  "devDependencies": { "@tauri-apps/cli": "^2.10.0", "typescript": "^5.9.3", "vite": "^7.3.1" }
+}
